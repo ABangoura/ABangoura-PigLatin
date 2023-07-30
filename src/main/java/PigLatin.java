@@ -17,6 +17,17 @@ public class PigLatin {
      * @return the pig latin form of in.
      */
     public String returnPigLatin(String in){
-        return "";
+        // Get the first character in the string.
+        char firstCharacter = in.charAt(0);
+
+        // Save the rest of the string as a substring.
+        String subString = in.substring(1, in.length());
+
+        // The pig latin ending.
+        String ending = "ay";
+
+        // Concatenate all 3 sections to form the pig latin word
+        // and return the result.
+        return subString + firstCharacter + ending;
     }
 }
